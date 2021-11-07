@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__left-block">
+            <div class="header__logo">
+                <img src="icons/logo.svg" alt="Logotyp">
+            </div>
+            <nav class="header__links">
+                <a href="#" class="header__link">Dostawa posiłków</a>
+                <a href="#" class="header__link">Inny adres</a>
+            </nav>
+        </div>
+        <div class="header__right-block">
+            <button class="btn btn_white">Skontaktować z nami</button>
+        </div>
+    </header>
+    <div class="sidepanel">
+        <div class="sidepanel__text"><span>Portale społecznościowe</span></div>
+        <div class="sidepanel__divider"></div>
+        <a href="#" class="sidepanel__icon">
+            <img src="icons/instagram.svg" alt="instagram">
+        </a>
+        <a href="#" class="sidepanel__icon">
+            <img src="icons/facebook.svg" alt="facebook">
+        </a>
+    </div>
+
+    <div class="preview">
+        <div class="bgc_blue"></div>
+        <div class="container">
+            <div class="tabcontainer">
+                <div class="tabcontent">
+                    <img src="img/tabs/vegy.jpg" alt="vegy">
+                    <div class="tabcontent__descr">
+                        Meni Fitness to nowe podejście do gotowania: więcej świeżych warzyw i owoców. Dla osób zainteresowanych sportem, aktywnych i zdrowych. To zupełnie nowy produkt o optymalnej cenie i wysokiej jakości!
+                    </div>
+                </div>
+                
+                <div class="tabheader">
+                    <h3>Wybierz typ wyżywienia</h3>
+                    <div class="tabheader__items">
+                        <div class="tabheader__item tabheader__item_active">Fitnes</div>
+                        <div class="tabheader__item">Premium</div>
+                        <div class="tabheader__item">Bez tłuszczu</div>
+                        <div class="tabheader__item">Zbalansowane</div>
+                    </div>
+                </div>
+            </div>
+            <div class="preview__life">Żyj pełnym życiem</div>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="offer">
+        <div class="bgc_y"></div>
+        <div class="container">
+            <div class="offer__text">
+                <h2 class="title">Co możemy zaproponować?</h2>
+                <div class="offer__descr">
+                    Naszym głównym pomysłem jest zdrowe wyżywienie. To może być proste i smaczne. Nie jesteśmy tylko dostawą, jesteśmy serwisem! Zadbaliśmy o wszystkie obliczenia kalorii, wielkości porcji i innych ważnych, ale nudnych aspektów. Wszystko, co dla ciebie zostaję, to zdrowe, satysfakcjonujące i odpowiednie jedzenie, które przynosimy pod same drzwi.
+                </div>
+            </div>
+            <div class="offer__action">
+                <button class="btn btn_dark">Skontaktować z nami</button>
+            </div>
+        </div>
+        <div class="container">
+            <div class="offer__advantages">
+                <h2>Szybko i zdrowo</h2>
+                <div class="offer__advantages-text">
+                    Gotowanie w domu wymaga wiele wysiłku, czasu i nerwów. Od razu przywozimy jedzenie na cały dzień, a Ty możesz robić co chcesz, nie dostosowując się do nikogo i mając pewność co do jakości produktu!
+                </div>
+                <h2>Właściwa dieta</h2>
+                <div class="offer__advantages-text">
+                    Opracowaliśmy specjalne meni, które uwzględnia wszystkie szczegóły prawidłowego odżywiania, od wyliczania kalorii i do tworzenia diety.
+                </div>
+            </div>
+            <div class="offer__slider">
+                <div class="offer__slider-counter">
+                    <div class="offer__slider-prev">
+                        <img src="icons/left.svg" alt="prev">
+                    </div>
+                    <span id="current">03</span>
+                    /
+                    <span id="total">04</span>
+                    <div class="offer__slider-next">
+                        <img src="icons/right.svg" alt="next">
+                    </div>
+                </div>
+                <div class="offer__slider-wrapper">
+                    <div class="offer__slide">
+                        <img src="img/slider/pepper.jpg" alt="pepper">
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="calculating">
+        <div class="container">
+            <h2 class="title">Oblicz swoje zapotrzebowanie na kalorie
+            </h2>
+            <div class="calculating__field">
+                <div class="calculating__subtitle">
+                    Twoja płeć
+                </div>
+                <div class="calculating__choose" id="gender">
+                    <div class="calculating__choose-item calculating__choose-item_active">Kobieta</div>
+                    <div class="calculating__choose-item">Mężczyzna</div>
+                </div>
+
+                <div class="calculating__subtitle">
+                    Twoje dane
+                </div>
+                <div class="calculating__choose calculating__choose_medium">
+                    <input type="text" id="height" placeholder="Podaj wzrost" class="calculating__choose-item">
+                    <input type="text" id="weight" placeholder="Podaj wagę"  class="calculating__choose-item">
+                    <input type="text" id="age" placeholder="Podaj wiek" class="calculating__choose-item">
+                </div>
+
+                <div class="calculating__subtitle">
+                    Wybierz swoją aktywność fizyczną
+                </div>
+                <div class="calculating__choose calculating__choose_big">
+                    <div id="low" class="calculating__choose-item">Niska aktywność </div>
+                    <div id="small"  class="calculating__choose-item calculating__choose-item_active">trochę większa aktywność</div>
+                    <div id="medium" class="calculating__choose-item">umiarkowana aktywność</div>
+                    <div id="high" class="calculating__choose-item">wysoka aktywność</div>
+                </div>
+
+                <div class="calculating__divider"></div>
+
+                <div class="calculating__total">
+                    <div class="calculating__subtitle">
+                        Twoje dzienne spożycie kalorii:
+                    </div>
+                    <div class="calculating__result">
+                        <span>2700</span> kal
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="menu">
+        <h2 class="title">Nasze meni na cały dzień</h2>
+
+        <div class="menu__field">
+            <div class="container">
+                <div class="menu__item">
+                    <img src="img/tabs/vegy.jpg" alt="vegy">
+                    <h3 class="menu__item-subtitle">Meni Fitnes</h3>
+                    <div class="menu__item-descr">Meni 'Fitnes' to nowe podejście do gotowania: więcej świeżych warzyw i owoców. Produkt ludzi aktywnych i zdrowych. To zupełnie nowy produkt o optymalnej cenie i wysokiej jakości!</div>
+                    <div class="menu__item-divider"></div>
+                    <div class="menu__item-price">
+                        <div class="menu__item-cost">Cena:</div>
+                        <div class="menu__item-total"><span>229</span> zł/dzień</div>
+                    </div>
+                </div>
+                <div class="menu__item">
+                    <img src="img/tabs/elite.jpg" alt="elite">
+                    <h3 class="menu__item-subtitle">Meni “Premium”</h3>
+                    <div class="menu__item-descr">W meni „Premium” stosujemy nie tylko piękny wygląd opakowań, ale także wysokiej jakości wykonanie dań. Czerwone ryby, owoce morza, owoce - meni restauracji bez wchodzenia do restauracji!</div>
+                    <div class="menu__item-divider"></div>
+                    <div class="menu__item-price">
+                        <div class="menu__item-cost">Cena:</div>
+                        <div class="menu__item-total"><span>550</span> zł/dzień</div>
+                    </div>
+                </div>
+                <div class="menu__item">
+                    <img src="img/tabs/post.jpg" alt="post">
+                    <h3 class="menu__item-subtitle">Meni "Bez tłuszczu"</h3>
+                    <div class="menu__item-descr">Meni "Bez tłuszczu" to staranny dobór składników: całkowity brak produktów pochodzenia zwierzęcego, mleko z migdałów, owsa czy kokosa, odpowiednia ilość białka dzięki tofu oraz importowane wegetariańskie steki. </div>
+                    <div class="menu__item-divider"></div>
+                    <div class="menu__item-price">
+                        <div class="menu__item-cost">Cena:</div>
+                        <div class="menu__item-total"><span>430</span> zł/dzień</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="order">
+        <div class="container">
+            <div class="title">Zamów dzień próbny już teraz!</div>
+            <form action="#" class="order__form">
+                <input required placeholder="naimię" name="name" type="text" class="order__input">
+                <input required placeholder="telefon" name="phone" type="phone" class="order__input">
+                <img src="icons/right.svg" alt="right">
+                <button class="btn btn_dark btn_min">Zadzwonić do mie</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="promotion">
+        <div class="bgc_y"></div>
+        <div class="container">
+            <div class="promotion__text">
+                <div class="title">Promocja dla nowych klijentów!</div>
+                <div class="promotion__descr">
+                    Doceniamy każdego klienta i zapraszamy zostać jednym z nich na bardzo korzystnych warunkach.
+                     Każdy, kto zamówi dostawę jedzenia na tydzień, otrzyma rabat w wysokości <span>20%!</span>
+                    <br><br>
+                    Promocja się konczy 20 maja в 00:00
+                </div>
+            </div>
+            <div class="promotion__timer">
+                <div class="title">Do konca promocji zostało:</div>
+                <div class="timer">
+                    <div class="timer__block">
+                        <span id="days">12</span>
+                        dni
+                    </div>
+                    <div class="timer__block">
+                        <span id="hours">20</span>
+                        godzin
+                    </div>
+                    <div class="timer__block">
+                        <span id="minutes">56</span>
+                        minut
+                    </div>
+                    <div class="timer__block">
+                        <span id="seconds">20</span>
+                        sekund
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="social">
+                <div class="subtitle">jesteśmy też tutaj:</div>
+                <a href="#" class="link">instagram</a>
+                <a href="#" class="link">facebook</a>
+            </div>
+            <div class="pepper">
+                <img src="icons/veg.svg" alt="pepper">
+            </div>
+            <div class="call">
+                <div class="subtitle">albo zadzwon do nas</div>
+                <a href="#" class="link">+411111111111</a>
+                <a href="#" class="link">+422222222222</a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal">
+        <div class="modal__dialog">
+            <div class="modal__content">
+                <form action="#">
+                    <div class="modal__close">&times;</div>
+                    <div class="modal__title">Oddzwonimy jaknajszybciej!</div>
+                    <input required placeholder="naimię" name="name" type="text" class="modal__input">
+                    <input required placeholder="telefon" name="phone" type="phone" class="modal__input">
+                    <button class="btn btn_dark btn_min">zadzwon do mnie</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
